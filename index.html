@@ -12,14 +12,19 @@
 <body>
     <header>
         <div class="logo"><img src="img/logo.png" alt="logo"></div>
+        <nav>
+            <ul class="navlink">
+                <li><a href="https://fr.wikipedia.org/wiki/%C3%89toile" target="_blank">Étoiles</a></li>
+                <li><a href="https://fr.wikipedia.org/wiki/Exoplan%C3%A8te" target="_blank">Exoplanètes</a></li>
+              </ul>
+        </nav>
         <div class="burger">
             <div id="mySidenav" class="sidenav">
                 <a id="closeBtn" href="#" class="close">×</a>
                 <ul>
-                  <li><a href="#">A propos</a></li>
-                  <li><a href="#">Nos services</a></li>
-                  <li><a href="#">Témoignages</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><p>A propos des</p></li>
+                  <li><a href="https://fr.wikipedia.org/wiki/%C3%89toile" target="_blank">Étoiles</a></li>
+                  <li><a href="https://fr.wikipedia.org/wiki/Exoplan%C3%A8te" target="_blank">Exoplanètes</a></li>
                 </ul>
               </div>
               
@@ -46,8 +51,12 @@
                 <h1>Types d'Étoiles</h1>
             </div>
             <div class="container-boite">
-                <div class="boite naines">Naines</div>
-                <div class="boite geantes">Géantes</div>
+                <div class="boite" onclick="" id="blanche">Naines blanches</div>
+                <div class="boite" onclick="" id="rouge">Naines rouges</div>
+                <div class="boite" onclick="" id="brune">Naines brunes</div>
+                <div class="boite" onclick="" id="geante_rouge">Géantes rouges</div>
+                <div class="boite" onclick="" id="geante_bleue">Géantes bleues</div>
+                <div class="boite" onclick="" id="supergeante_rouge">Supergéantes rouges</div>
             </div>
         </div>
         <div class="stars">
@@ -55,10 +64,22 @@
               <h1>Planètes habitables</h1>
           </div>
           <div class="container-boite">
-              <div class="boite">Exoplanetes</div>
+              <div class="boite" onclick="" id="TRAPPIST">TRAPPIST-1e</div>
+              <div class="boite" onclick="" id="Proxima">Proxima Centauri b</div>
+              <div class="boite" onclick="" id="Kepler">Kepler-186f</div>
+              <div class="boite" onclick="" id="HD">HD 189733 b</div>
+              <div class="boite" onclick="" id="Pegasi">51 Pegasi b"</div>
           </div>
         </div>
     </section>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick ="closeModal()">&times;</span>
+          <h2 id="modal-title"></h2>
+          <p id="modal-content">Modal content goes here.</p>
+        </div>
+    </div>
 
     <footer>
         <div class="logo"><img src="img/logo.png" alt="logo"></div>
