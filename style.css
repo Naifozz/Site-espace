@@ -12,7 +12,6 @@ body{
     display: flex;
     flex-direction: column;
     gap: 5rem;
-    height: 150vh;
 }
 
 header{
@@ -85,7 +84,7 @@ header{
 
 .page1{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,7 +113,7 @@ header{
     align-items: center;
     gap: 2rem;
     width: 100%;
-    height: 100vh;
+    height: 60vh;
 }
 .stars{
     width: 90%;
