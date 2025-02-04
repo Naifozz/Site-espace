@@ -45,16 +45,28 @@ const exoplanete = document.getElementById("exoplanete");
             const modalTitle = document.getElementById("modal-title");
             const modalContent = document.getElementById("modal-content");            
             
+            const exoData = data.exoplanetes;
             const modalData = data;
-                if (modalData.etoiles = undefined) {                  
-                    modalTitle.textContent = modalData.etoiles[id].titre;
-                    modalContent.textContent = modalData.etoiles[id].description;
-                } else {
-                    console.log(modalData);
-                    
-                    modalTitle.textContent = modalData.exoplanetes[id].titre;
-                    modalContent.textContent = modalData.exoplanetes[id].type;
-                }
-          
-          })
+                
+            if (data.etoiles[id]) {
+                const etoile = data.etoiles[id];
+                modalTitle.textContent = etoile.titre;
+                modalContent.innerHTML = `
+                  <p>Température: ${etoile.temperature}</p>
+                  <p>Masse: ${etoile.masse}</p>
+                  <p>Description: ${etoile.description}</p>
+                  <p>Exemples: ${etoile.exemples.join(', ')}</p>
+                `;
+              } 
+              else if (data.exoplanetes[id]) {
+                const exoplanete = data.exoplanetes[id];
+                modalTitle.textContent = exoplanete.titre;
+                modalContent.innerHTML = `
+                  <p>Type: ${exoplanete.type}</p>
+                  <p>Masse: ${exoplanete.masse}</p>
+                  <p>Période orbitale: ${exoplanete.periode_orbitale}</p>
+                  <p>Habitabilité: ${exoplanete.habitabilite}</p>
+                `;
+              }
+        });
       }

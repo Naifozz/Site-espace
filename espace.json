@@ -1,53 +1,80 @@
 {
-  "etoiles": {   
-      "blanche": {
-        "titre": "Naines blanches",
-        "temperature": "4000-40000K",
-        "masse": "0.17-1.33 masses solaires",
-        "description": "Reste stellaire dense et chaud",
-        "exemples": ["Sirius B", "Procyon B"],
-        "image": ["img/naineblanche1.jpg", "img/naineblanche2.jpg"]
-      },
-      "rouge": {
-        "titre": "Naines rouges",
-        "temperature": "2400-3700K",
-        "masse": "0.075-0.5 masses solaires",
-        "description": "Étoile la plus commune dans l'univers",
-        "exemples": ["Proxima Centauri", "TRAPPIST-1"],
-        "image": ["img/nainerouge1.jpg", "img/nainerouge2.jpg"]
-      },
-      "brune": {
-        "titre": "Naines brunes",
-        "temperature": "300-2800K",
-        "masse": "0.01-0.075 masses solaires",
-        "description": "Objet intermédiaire entre planète et étoile",
-        "exemples": ["Teide 1", "WISE 0855−0714"],
-        "image": ["img/nainebrune1.jpg", "img/nainebrune2.jpg"]
-      },    
-      "geante_rouge": {
-        "titre": "Géantes rouges",
-        "temperature": "3000-4500K",
-        "masse": "0.3-8 masses solaires",
-        "description": "Phase évoluée d'étoiles de masse moyenne",
-        "exemples": ["Aldébaran", "Arcturus"],
-        "image": []
-      },
-      "supergeante_rouge": {
-        "titre": "Supergéantes rouges",
-        "temperature": "3000-4500K",
-        "masse": "8-40 masses solaires",
-        "description": "Phase finale des étoiles massives",
-        "exemples": ["Bételgeuse", "Antarès"],
-        "image": []
-      },
-      "geante_bleue": {
-        "titre": "Géantes bleues",
-        "temperature": "10000-50000K",
-        "masse": "10-50 masses solaires",
-        "description": "Étoile très chaude et lumineuse",
-        "exemples": ["Rigel", "Deneb"],
-        "image": []
-      }
+  "etoiles": {
+    "blanche": {
+      "titre": "Naines blanches",
+      "temperature": "4000-40000K",
+      "masse": "0.17-1.33 masses solaires",
+      "description": "Reste stellaire dense et chaud",
+      "exemples": [
+        "Sirius B",
+        "Procyon B"
+      ],
+      "image": [
+        "img/naineblanche1.jpg",
+        "img/naineblanche2.jpg"
+      ]
+    },
+    "rouge": {
+      "titre": "Naines rouges",
+      "temperature": "2400-3700K",
+      "masse": "0.075-0.5 masses solaires",
+      "description": "Étoile la plus commune dans l'univers",
+      "exemples": [
+        "Proxima Centauri",
+        "TRAPPIST-1"
+      ],
+      "image": [
+        "img/nainerouge1.jpg",
+        "img/nainerouge2.jpg"
+      ]
+    },
+    "brune": {
+      "titre": "Naines brunes",
+      "temperature": "300-2800K",
+      "masse": "0.01-0.075 masses solaires",
+      "description": "Objet intermédiaire entre planète et étoile",
+      "exemples": [
+        "Teide 1",
+        "WISE 0855−0714"
+      ],
+      "image": [
+        "img/nainebrune1.jpg",
+        "img/nainebrune2.jpg"
+      ]
+    },
+    "geante_rouge": {
+      "titre": "Géantes rouges",
+      "temperature": "3000-4500K",
+      "masse": "0.3-8 masses solaires",
+      "description": "Phase évoluée d'étoiles de masse moyenne",
+      "exemples": [
+        "Aldébaran",
+        "Arcturus"
+      ],
+      "image": []
+    },
+    "supergeante_rouge": {
+      "titre": "Supergéantes rouges",
+      "temperature": "3000-4500K",
+      "masse": "8-40 masses solaires",
+      "description": "Phase finale des étoiles massives",
+      "exemples": [
+        "Bételgeuse",
+        "Antarès"
+      ],
+      "image": []
+    },
+    "geante_bleue": {
+      "titre": "Géantes bleues",
+      "temperature": "10000-50000K",
+      "masse": "10-50 masses solaires",
+      "description": "Étoile très chaude et lumineuse",
+      "exemples": [
+        "Rigel",
+        "Deneb"
+      ],
+      "image": []
+    }
   },
   "exoplanetes": {
     "TRAPPIST": {
