@@ -1,6 +1,7 @@
 {
   "etoiles": {
     "blanche": {
+      "id": "blanche",
       "titre": "Naines blanches",
       "temperature": "4000-40000K",
       "masse": "0.17-1.33 masses solaires",
@@ -16,10 +17,11 @@
       ]
     },
     "rouge": {
+      "id": "rouge",
       "titre": "Naines rouges",
       "temperature": "2400-3700K",
       "masse": "0.075-0.5 masses solaires",
-      "description": "Étoile la plus commune dans l'univers",
+      "description": "Ce sont les plus petites, les moins chaudes de l'univers mais également les plus nombreuses.",
       "exemples": [
         "Proxima Centauri",
         "TRAPPIST-1"
@@ -31,10 +33,11 @@
       ]
     },
     "brune": {
+      "id": "brune",
       "titre": "Naines brunes",
       "temperature": "300-2800K",
       "masse": "0.01-0.075 masses solaires",
-      "description": "Objet intermédiaire entre planète et étoile",
+      "description": "Une étoile avortée, trop petite pour que des réactions nucléaires puissent se maintenir dans son coeur. Intermédiaire entre planète et étoile. Les naines brunes ne sont pas brunes, au début de leur vie elles rayonnent faiblement dans le rouge et palissent par la suite.",
       "exemples": [
         "Teide 1",
         "WISE 0855−0714"
@@ -46,79 +49,119 @@
       ]
     },
     "geante_rouge": {
+      "id": "geante_rouge",
       "titre": "Géantes rouges",
       "temperature": "3000-4500K",
       "masse": "0.3-8 masses solaires",
-      "description": "Phase évoluée d'étoiles de masse moyenne",
+      "description": "Une géante rouge est une étoile devenant géante lors du stade tardif de son évolution stellaire, c'est la phase finale des étoiles",
       "exemples": [
         "Aldébaran",
         "Arcturus"
       ],
-      "image": []
+      "image": [
+        "img/geanterouge1.png",
+        "img/geanterouge2.jpg",
+        "img/geanterouge3.jpg"
+      ]
     },
     "supergeante_rouge": {
+      "id": "supergeante_rouge",
       "titre": "Supergéantes rouges",
       "temperature": "3000-4500K",
       "masse": "8-40 masses solaires",
-      "description": "Phase finale des étoiles massives",
+      "description": "Les étoiles de type supergéantes rouges sont des étoiles massives qui ont terminé leur vie sur la séquence principale. Elles ont consommé l'ensemble de leur hydrogène dans leur cœur. Puisque la pression vers l'intérieur liée à la force gravitationnelle n'est plus contrebalancée par la pression de radiation créée dans le cœur par les réactions nucléaires, le cœur s'effondre lentement.",
       "exemples": [
         "Bételgeuse",
         "Antarès"
       ],
-      "image": []
+      "image": [
+        "img/supergeanterouge1.jpg",
+        "img/supergeanterouge2.jpg",
+        "img/supergeanterouge3.jpg"
+      ]
     },
     "geante_bleue": {
+      "id": "geante_bleue",
       "titre": "Géantes bleues",
       "temperature": "10000-50000K",
       "masse": "10-50 masses solaires",
-      "description": "Étoile très chaude et lumineuse",
+      "description": "Étoile très massive (au moins dix fois plus que notre Soleil), dont la température de surface est très élevée, lui conférant cette couleur bleue.",
       "exemples": [
         "Rigel",
         "Deneb"
       ],
-      "image": []
+      "image": [
+        "img/geantebleue1.jpeg",
+        "img/geantebleue2.jpeg",
+        "img/geantebleue3.jpg"
+      ]
     }
   },
   "exoplanetes": {
     "TRAPPIST": {
+      "id": "TRAPPIST",
       "titre": "TRAPPIST-1e",
       "type": "Terrestre",
       "masse": "0.772 masses terrestres",
       "periode_orbitale": "6.1 jours",
       "habitabilite": "Zone habitable",
-      "image": []
+      "image": [
+        "img/trappist1.png",
+        "img/trappist2.png",
+        "img/trappist3.png"
+      ]
     },
     "Proxima": {
+      "id": "Proxima",
       "titre": "Proxima Centauri b",
       "type": "Super-Terre",
       "masse": "1.17 masses terrestres",
       "periode_orbitale": "11.2 jours",
       "habitabilite": "Zone habitable",
-      "image": []
+      "image": [
+        "img/proxima1.jpg",
+        "img/proxima2.png",
+        "img/proxima3.jpg"
+      ]
     },
     "Kepler": {
+      "id": "Kepler",
       "titre": "Kepler-186f",
       "type": "Terrestre",
       "masse": "1.2 masses terrestres",
       "periode_orbitale": "129.9 jours",
       "habitabilite": "Zone habitable",
-      "image": []
+      "image": [
+        "img/kepler1.jpg",
+        "img/kepler2.jpg",
+        "img/kepler3.jpg"
+      ]
     },
-    "HD": {
-      "titre": "HD 189733 b",
-      "type": "Jupiter chaud",
-      "masse": "1.14 masses de Jupiter",
-      "periode_orbitale": "2.2 jours",
-      "habitabilite": "Non habitable",
-      "image": []
+    "TOI": {
+        "id": "TOI",
+        "titre": "TOI-700d",
+        "type": "Exoplanète tellurique",
+        "masse": "1.1 masses terrestres",
+        "periode_orbitale": "37.4 jours",
+        "habitabilite": "Zone habitable",
+        "image": [
+          "img/toi1.jpg",
+          "img/toi2.jpg",
+          "img/toi3.jpg"
+        ]
     },
-    "Pegasi": {
-      "titre": "51 Pegasi b",
-      "type": "Jupiter chaud",
-      "masse": "0.47 masses de Jupiter",
-      "periode_orbitale": "4.2 jours",
-      "habitabilite": "Non habitable",
-      "image": []
+    "LHS": {
+        "id": "LHS",
+        "titre": "LHS 1140b",
+        "type": "Super-Terre",
+        "masse": "6.6 masses terrestres",
+        "periode_orbitale": "24.7 jours",
+        "habitabilite": "Zone habitable",
+        "image": [
+          "img/lhs1.jpg",
+          "img/lhs2.jpg",
+          "img/lhs3.jpg"
+        ]
     }
   }
 }

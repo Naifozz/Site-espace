@@ -27,21 +27,54 @@ function closeNav() {
   sidenav.classList.remove("active");
 }
 
-const naines = document.getElementById("naines");
-const geantes = document.getElementById("geantes");
-const exoplanete = document.getElementById("exoplanete");
+
+
+function createBoxes() {
+  fetch(`espace.json`)
+          .then(response => response.json())
+          .then(data => {
+            Object.keys(data.etoiles).forEach(type => {
+              const boiteEtoile = document.getElementById("boite-etoile");
+              
+              const etoileDiv = document.createElement('div')
+              etoileDiv.classList.add('boite');
+              etoileDiv.id = data.etoiles[type].id
+              etoileDiv.textContent = data.etoiles[type].titre
+              
+              boiteEtoile.appendChild(etoileDiv);
+              
+
+              etoileDiv.addEventListener("click", () => {               
+                const id = etoileDiv.id;
+                updateModal(id);
+                modal.style.display = "flex";
+                currentSlide(1)
+              })             
+            })  
+            Object.keys(data.exoplanetes).forEach(type => {
+              const boiteExo = document.getElementById("boite-planete");
+
+              const planeteDiv = document.createElement('div')
+              planeteDiv.classList.add('boite')
+              planeteDiv.id = data.exoplanetes[type].id
+              planeteDiv.textContent = data.exoplanetes[type].titre
+
+              boiteExo.appendChild(planeteDiv)
+
+              planeteDiv.addEventListener("click", () => {               
+                const id = planeteDiv.id;
+                updateModal(id);
+                modal.style.display = "flex";
+                currentSlide(1)
+              })   
+            })
+            });
+}
+createBoxes()
 
     const modal = document.getElementById("myModal");
-    const span = document.getElementsByClassName("close")[0];
 
-    const boites = document.querySelectorAll(".boite");
-    boites.forEach(boite => {
-      boite.addEventListener("click", () => {
-        const id = boite.id;
-        updateModal(id);
-        modal.style.display = "flex";
-      });
-    });
+    
     function closeModal() {
         modal.style.display = "none";
     }
