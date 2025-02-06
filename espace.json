@@ -4,14 +4,15 @@
       "titre": "Naines blanches",
       "temperature": "4000-40000K",
       "masse": "0.17-1.33 masses solaires",
-      "description": "Reste stellaire dense et chaud",
+      "description": "Une naine blanche est un astre incroyablement dense ne dépassant pas 1,44 fois la masse du Soleil. Elle est le résidu d'une étoile modeste, ne dépassant pas 8 masses solaires, qui a épuisé son carburant nucléaire et éjecté ses couches supérieures sous forme de nébuleuse planétaire.",
       "exemples": [
         "Sirius B",
         "Procyon B"
       ],
       "image": [
         "img/naineblanche1.jpg",
-        "img/naineblanche2.jpg"
+        "img/naineblanche2.jpg",
+        "img/naineblanche3.jpg"
       ]
     },
     "rouge": {
@@ -25,7 +26,8 @@
       ],
       "image": [
         "img/nainerouge1.jpg",
-        "img/nainerouge2.jpg"
+        "img/nainerouge2.jpg",
+        "img/nainerouge3.jpg"
       ]
     },
     "brune": {
@@ -39,7 +41,8 @@
       ],
       "image": [
         "img/nainebrune1.jpg",
-        "img/nainebrune2.jpg"
+        "img/nainebrune2.jpg",
+        "img/nainebrune3.jpg"
       ]
     },
     "geante_rouge": {
