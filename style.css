@@ -324,4 +324,10 @@ footer{
     background-color: #717171;
 }
 
+#etoile{
+    cursor: pointer;
+}
+#exo{
+    cursor: pointer;
+}
   

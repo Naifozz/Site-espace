@@ -10,15 +10,6 @@ document.addEventListener('click', (event) => {
       sidenav.classList.remove("active");
   }
 });
-etoileText = document.getElementById("etoile");
-exoText = document.getElementById("exo");
-
-etoileText.addEventListener("click", () => {
-  closeNav();
-});
-exoText.addEventListener("click", () => {
-  closeNav();
-})
 function openNav() {
   sidenav.classList.add("active");
 }
@@ -27,6 +18,26 @@ function closeNav() {
   sidenav.classList.remove("active");
 }
 
+document.querySelectorAll("#etoile").forEach(etoile => {
+  etoile.addEventListener("click", function() {
+      let target = document.getElementById("boite-etoile");
+      let targetPosition = target.getBoundingClientRect().top + window.scrollY;
+      let windowHeight = window.innerHeight;
+      let elementHeight = target.offsetHeight;
+
+      let scrollToPosition = targetPosition - (windowHeight / 2) + (elementHeight / 2);
+
+      window.scrollTo({ top: scrollToPosition, behavior: "smooth" });
+      closeNav();
+  });
+});
+
+document.querySelectorAll("#exo").forEach(exo => {
+  exo.addEventListener("click", function() {
+      document.getElementById("boite-planete").scrollIntoView({ behavior: "smooth" });
+      closeNav();
+  });
+});
 
 
 function createBoxes() {
